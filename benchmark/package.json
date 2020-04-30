@@ -5,6 +5,12 @@
   "dependencies": {
     "benchmark": "^2.1.4",
     "msgpack-lite": "^0.1.26",
-    "notepack.io": "^2.2.0"
-  }
+    "notepack.io": "^2.2.0",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
